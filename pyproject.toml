@@ -1,0 +1,20 @@
+[project]
+name = "propamm-take-home"
+version = "0.1.0"
+description = "Quant Developer take-home: PropAMM pricing model and optimal on-chain refresh frequency"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["part1_pricing", "part2_refresh_model"]
